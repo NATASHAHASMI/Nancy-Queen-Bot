@@ -4,7 +4,7 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT', False)
 
 if ENVIRONMENT:
     try:
-        API_ID = int(os.environ.get('API_ID', 22427221))
+        API_ID = int(os.environ.get('API_ID', 0))
     except ValueError:
         raise Exception("Your API_ID is not a valid integer.")
     API_HASH = os.environ.get('API_HASH', None)
@@ -17,8 +17,8 @@ if ENVIRONMENT:
         MUST_JOIN = MUST_JOIN.replace("@", "")
 else:
     # Fill the Values
-    API_ID = "22427221"
-    API_HASH = "2785b4528c12682e515db3762463c126"
+    API_ID = 0
+    API_HASH = ""
     BOT_TOKEN = ""
     DATABASE_URL = ""
     DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
