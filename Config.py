@@ -20,7 +20,7 @@ else:
     API_ID = 22427221
     API_HASH = "2785b4528c12682e515db3762463c126"
     BOT_TOKEN = "6389119744:AAGWES7HoM1EdgtzoxtrnbX7TpoEJoENXzU"
-    DATABASE_URL = "mongodb+srv://xayonara:leoleo@cluster0.tkvlcza.mongodb.net/?retryWrites=true&w=majority"
+    DATABASE_URL = ""
     DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
     MUST_JOIN = "-1001779717901"
     if MUST_JOIN.startswith("@"):
